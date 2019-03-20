@@ -1,4 +1,4 @@
 # victorexposito.github.io
-[My wall](https://victorexposito.githut.io)
+[My wall](https://victorexposito.github.io)
 
 
