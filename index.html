@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Wall</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        input {
+            width: 20%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            text-align: center;
+            font-size: 1.5em;
+            border-radius: 10em;
+        }
+        div {
+            border-radius: 20px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            width: 707px;
+        }
+
+    </style>
+</head>
+<body style="background-color: powderblue">
+    <img src="https://desenio.co.uk/bilder/artiklar/zoom/8288_1.jpg" height="600 px">
+
+
+    <input id="message" placeholder="Kommenter her" style="background-color: greenyellow">
+    <div class="comment-box"></div>
+
+    <script>
+        $("#message").keydown(function(event){
+            if(event.keyCode === 13){
+                console.log("did it work?", event.target.value)
+                $(".comment-box").prepend(event.target.value+ "<br/>");
+                $("#message").val("");
+            }
+        })
+
+        // Todo get value from input
+        // todo insert value at the top of the comment box
+    </script>
+</body>
+</html>
